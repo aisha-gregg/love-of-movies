@@ -3,6 +3,10 @@
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .login-form {
@@ -11,7 +15,6 @@
   border-radius: 6px;
   width: 300px;
   padding: 30px;
-  transform: translate(70px, 70px);
 }
 
 .login .login-form h1 {
@@ -29,24 +32,23 @@
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff;
 }
 
-.login .login-form .username {
+.login .login-form .input {
   display: flex;
-  margin: 20px;
-  padding: 5px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
 }
 
-.login .login-form .password {
-  display: flex;
-  margin: 20px;
-  padding: 5px;
+.login .login-form .username {
+  margin-bottom: 20px;
 }
 
 .login .login-form .forgot {
   color: grey;
+  font-size: 12px;
+  width: 100%;
+  text-align: right;
   display: inline-block;
-  font: 12px/1 sans-serif;
-  left: -19px;
-  position: relative;
 }
 
 .login .login-form .forgot:hover a {

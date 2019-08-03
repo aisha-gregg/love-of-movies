@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Yantramanav:100&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -8,16 +10,27 @@ body {
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 14px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 16px;
   line-height: 1.8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
 }
 
 a {
   text-decoration: none;
 }
 
-img {
+img,
+video {
   width: 100%;
 }
 
@@ -36,4 +49,9 @@ button {
 
 button a {
   color: #fff;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
 }
