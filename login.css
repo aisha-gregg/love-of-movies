@@ -1,0 +1,58 @@
+.login {
+  background-image: url(img/loveofmovies2.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-form {
+  background: #eceeee;
+  border: 2px solid #42464b;
+  border-radius: 6px;
+  width: 300px;
+  padding: 30px;
+  transform: translate(70px, 70px);
+}
+
+.login .login-form h1 {
+  background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+  border-bottom: 1px solid #a6abaf;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  color: #727678;
+  display: block;
+  height: 50px;
+  font: 600 14px/1 "Open Sans", sans-serif;
+  padding-top: 14px;
+  margin: 10px;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2), 0 1px 0 #fff;
+}
+
+.login .login-form .username {
+  display: flex;
+  margin: 20px;
+  padding: 5px;
+}
+
+.login .login-form .password {
+  display: flex;
+  margin: 20px;
+  padding: 5px;
+}
+
+.login .login-form .forgot {
+  color: grey;
+  display: inline-block;
+  font: 12px/1 sans-serif;
+  left: -19px;
+  position: relative;
+}
+
+.login .login-form .forgot:hover a {
+  color: #cf1e1e;
+}
+
+.login .login-form .login-form-button {
+  margin-bottom: 20px;
+}

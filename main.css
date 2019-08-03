@@ -1,0 +1,110 @@
+/* General styles */
+
+.h1 {
+  text-align: start;
+}
+
+img {
+  border-radius: 5px;
+}
+
+/* Menu */
+.menu {
+  margin: 0;
+  padding: 30px;
+  background-color: #da5656;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.menu a {
+  color: white;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+.menu .logo {
+  width: 55px;
+}
+
+.menu a:hover {
+  background-color: #161515;
+  transition: 0.3s ease-in-out;
+}
+
+.menu .search {
+  margin-left: auto;
+}
+
+.menu .search-term {
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  color: #9dbfaf;
+  padding: 16px;
+  outline: 0;
+  border: none;
+}
+
+.menu .search-term:focus {
+  color: rgb(42, 44, 44);
+}
+
+.search-image {
+  height: 25px;
+}
+
+/*Resize the wrap to see the search bar change*/
+.wrap {
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Reel */
+
+.original-reel {
+  display: grid;
+  padding: 24px;
+  grid-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 200px 200px;
+}
+
+.original-reel div {
+  position: relative;
+  overflow: hidden;
+}
+p {
+  text-align: block, center;
+}
+
+.original-reel div p {
+  font-size: 12px;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  transition: 0.25s ease opacity;
+}
+
+.original-reel img {
+  object-fit: cover;
+  height: 100%;
+  transition: 0.25s ease transform;
+}
+
+.original-reel div:hover p {
+  opacity: 1;
+}
+
+.original-reel div:hover img {
+  transform: scale(1.2);
+  filter: blur(1px) brightness(0.9);
+}
