@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700|Yantramanav:100&display=swap");
 
+:root {
+  --border-radius: 10px;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,9 +16,10 @@ body {
 body {
   font-family: "Noto Sans", sans-serif;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.45;
 }
 
+/* https://type-scale.com/ */
 h1,
 h2,
 h3,
@@ -23,6 +28,34 @@ h5,
 h6 {
   font-family: "Yantramanav", sans-serif;
   font-weight: 100;
+  margin: 2.75rem 0 1rem;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.488em;
+}
+
+h2 {
+  font-size: 2.074em;
+}
+
+h3 {
+  font-size: 1.728em;
+}
+
+h4 {
+  font-size: 1.44em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+small,
+.text_small {
+  font-size: 0.833em;
 }
 
 a {
@@ -34,21 +67,32 @@ video {
   width: 100%;
 }
 
-.button {
-  display: inline-block;
-  width: 100%;
-  font-weight: bold;
-  color: #fff;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px;
-  cursor: pointer;
-  border: none;
-  background-color: #da5656;
-  border-radius: 5px;
+img {
+  border-radius: var(--border-radius);
 }
 
 .wrapper {
   width: 800px;
   margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  background-color: red;
+  border-radius: var(--border-radius);
+  margin-bottom: 20px;
+}
+
+.button-secondary {
+  border: 1px solid red;
+  color: red;
+  background-color: white;
 }

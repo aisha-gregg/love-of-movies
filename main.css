@@ -1,18 +1,8 @@
-/* General styles */
-
-.h1 {
-  text-align: start;
-}
-
-img {
-  border-radius: 5px;
-}
-
 /* Menu */
 .menu {
   margin: 0;
   padding: 30px;
-  background-color: #da5656;
+  background-color: red;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -20,8 +10,9 @@ img {
 
 .menu a {
   color: white;
-  padding: 0 16px;
+  padding: 10px 15px;
   text-decoration: none;
+  border-radius: var(--border-radius);
 }
 
 .menu .logo {
@@ -29,7 +20,7 @@ img {
 }
 
 .menu a:hover {
-  background-color: #161515;
+  background-color: black;
   transition: 0.3s ease-in-out;
 }
 
@@ -42,14 +33,14 @@ img {
   padding: 5px;
   height: 20px;
   border-radius: 5px;
-  color: #9dbfaf;
+  color: white;
   padding: 16px;
   outline: 0;
   border: none;
 }
 
 .menu .search-term:focus {
-  color: rgb(42, 44, 44);
+  color: grey;
 }
 
 .search-image {
@@ -66,10 +57,13 @@ img {
 }
 
 /* Reel */
+.container {
+  padding: 16px;
+}
 
 .original-reel {
   display: grid;
-  padding: 24px;
+
   grid-gap: 16px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 200px 200px;
@@ -78,9 +72,6 @@ img {
 .original-reel div {
   position: relative;
   overflow: hidden;
-}
-p {
-  text-align: block, center;
 }
 
 .original-reel div p {
@@ -107,4 +98,5 @@ p {
 .original-reel div:hover img {
   transform: scale(1.2);
   filter: blur(1px) brightness(0.9);
+  border-radius: var(--border-radius);
 }

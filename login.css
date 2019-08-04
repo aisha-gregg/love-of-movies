@@ -10,19 +10,16 @@
 }
 
 .login-form {
-  background: #eceeee;
-  border: 2px solid #42464b;
-  border-radius: 6px;
+  background: white;
+  border: 2px grey;
+  border-radius: var(--border-radius);
   width: 300px;
   padding: 30px;
 }
 
 .login .login-form h1 {
-  border-bottom: 1px solid #a6abaf;
-  color: #727678;
-  display: block;
-  height: 50px;
-  font: 600 14px/1 "Open Sans", sans-serif;
+  border-bottom: 1px solid grey;
+  color: grey;
   padding-top: 14px;
   text-align: center;
 }
@@ -31,7 +28,7 @@
   display: flex;
   padding: 10px;
   width: 100%;
-  border-radius: 5px;
+  border-radius: var(--border-radius);
 }
 
 .login .login-form .username {
@@ -44,10 +41,6 @@
   width: 100%;
   text-align: right;
   display: inline-block;
-}
-
-.login .login-form .forgot:hover a {
-  color: #cf1e1e;
 }
 
 .login .login-form .login-form-button {
