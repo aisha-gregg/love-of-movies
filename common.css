@@ -34,7 +34,8 @@ video {
   width: 100%;
 }
 
-button {
+.button {
+  display: inline-block;
   width: 100%;
   font-weight: bold;
   color: #fff;
@@ -45,10 +46,6 @@ button {
   border: none;
   background-color: #da5656;
   border-radius: 5px;
-}
-
-button a {
-  color: #fff;
 }
 
 .wrapper {

@@ -8,7 +8,7 @@
 
 ## TODOs
 
-- [ ] Refactor login title
+- [ x] Refactor login title
 - [ ] Fix the links
 - [ ] Create `commons.css`
 - [ ] invert register button
